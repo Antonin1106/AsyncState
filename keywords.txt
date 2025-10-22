@@ -1,0 +1,17 @@
+# keywords.txt
+# Here are different names to color in the Arduino IDE
+
+# Class
+AsyncState	KEYWORD1
+
+# Methods
+## Utility functions
+begin	KEYWORD2
+reset	KEYWORD2
+timePassed	KEYWORD2
+clear	KEYWORD2
+exists	KEYWORD2
+pause	KEYWORD2
+resume	KEYWORD2
+elapsed	KEYWORD2
+remaining	KEYWORD2
