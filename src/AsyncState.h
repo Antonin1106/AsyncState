@@ -25,7 +25,7 @@
  * }
  * @endcode
  *
- * @note This class does not use dynamic memory and can be safely used
+ * @note This class does not use dynamic memory and can be used
  *       in performance-sensitive or memory-limited applications.
  *
  * @author

@@ -1,2 +1,6 @@
 .vscode
+
+# Ignore Doxygen intermediate config and outputs
 Doxyfile
+doxybook2.json
+docs/xml

@@ -1,3 +1,18 @@
+---
+title: README.md
+
+---
+
+# README.md
+
+
+
+
+
+
+## Source code
+
+```markdown
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # AsyncState
@@ -128,3 +143,9 @@ Includes ready-to-use Arduino sketches demonstrating how to use the library:
 ## Author
 
 ### [Antonin1106](https://github.com/Antonin1106) – Arduino & Web Developer
+```
+
+
+-------------------------------
+
+Updated on 2025-10-23 at 22:20:18 +0200
