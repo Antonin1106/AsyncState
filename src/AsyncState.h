@@ -25,11 +25,7 @@
  * }
  * @endcode
  *
- * @note This class does not use dynamic memory and can be used
- *       in performance-sensitive or memory-limited applications.
- *
- * @author
- * Antonin1106
+ * @author Antonin1106
  * @version 1.0.0
  * @date 2025-10-22
  */

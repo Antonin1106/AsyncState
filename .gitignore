@@ -1,6 +1,7 @@
 .vscode
 
-# Ignore Doxygen intermediate config and outputs
-Doxyfile
-doxybook2.json
+# Build directory where are stored compiled files
+build
+
+# Ignore Doxygen intermediate outputs
 docs/xml
