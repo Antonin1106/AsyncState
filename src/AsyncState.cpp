@@ -50,6 +50,5 @@ unsigned long AsyncState::elapsed()
 
 long AsyncState::remaining(unsigned long interval)
 {
-    long rem = (long)interval - (long)elapsed();
-    return rem > 0 ? rem : 0;
+   return (long)interval - (long)elapsed();
 }
