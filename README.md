@@ -1,6 +1,6 @@
 # AsyncState
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Last commit](https://img.shields.io/github/last-commit/Antonin1106/AsyncState) ![Stars](https://img.shields.io/github/stars/Antonin1106/AsyncState)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) ![Last commit](https://img.shields.io/github/last-commit/Antonin1106/AsyncState) ![Stars](https://img.shields.io/github/stars/Antonin1106/AsyncState)
 
 **AsyncState** is a lightweight **Arduino timing library** designed to simplify **non-blocking code** using the `millis()` function.  
 It allows you to easily manage multiple independent timers without using `delay()`, ideal for responsive, event-driven Arduino projects.
@@ -8,6 +8,7 @@ It allows you to easily manage multiple independent timers without using `delay(
 
 **This software is provided under the MIT License and is supplied "as is", without any warranty. Use it at your own risk.**
 
+Public documentation is available at [https://antonin1106.github.io/AsyncState](https://antonin1106.github.io/AsyncState/).
 
 ---
 ## Table of Contents
@@ -23,6 +24,8 @@ It allows you to easily manage multiple independent timers without using `delay(
     - [`docs/`](#docs)
     - [`examples/`](#examples)
     - [`src/`](#src)
+  - [Author](#author)
+    - [Antonin1106](#antonin1106)
 
 
 ---
@@ -124,7 +127,6 @@ Documents\Arduino\libraries\AsyncState\
 ├── README.md
 │
 ├── docs\
-│   ├── AsyncState.md
 │   └── Doxyfile
 │
 ├── examples\
@@ -138,46 +140,40 @@ Documents\Arduino\libraries\AsyncState\
     └── AsyncState.h
 ```
 
----
-
-### Root Files
-- **[.gitignore](.gitignore)** - Git configuration file for ignored content.
-- **[keywords.txt](keywords.txt)** - Keyword definitions for Arduino IDE syntax.
-- **[library.json](library.json)** - Metadata for PlatformIO recognition.
-- **[library.properties](library.properties)** - Metadata for Arduino IDE recognition.
-- **[LICENSE](LICENSE)** - License file describing usage terms.
-- **[README.md](README.md)** - Main documentation for the library.
-
----
+### [Root Files](/)
+- **[.gitignore](.gitignore)** : Git configuration file for ignored content.
+- **[keywords.txt](keywords.txt)** : Keyword definitions for Arduino IDE syntax.
+- **[library.json](library.json)** : Metadata for PlatformIO recognition.
+- **[library.properties](library.properties)** : Metadata for Arduino IDE recognition.
+- **[LICENSE](LICENSE)** : License file describing usage terms.
+- **[README.md](README.md)** : Main documentation for the library.
 
 ### [`docs/`](docs/)
 
-Contains the **auto-generated documentation** produced by [Doxygen](https://www.doxygen.nl/)  
-and converted to **Markdown** using [moxygen](https://github.com/sourcey/moxygen).
+Contains the **documentation configuration** for [Doxygen](https://www.doxygen.nl/).
 
-- **[AsyncState.md](docs/AsyncState.md)** - Auto-generated markdown output.
-- **[Doxyfile](docs/Doxyfile)** - Configuration file for Doxygen.
+- **[Doxyfile](docs/Doxyfile)** : Configuration file for Doxygen.
 
-This folder provides browsable documentation directly within GitHub or static site tools.
-
-> Note: The content in this folder is **automatically generated** -
-> **do not edit manually**, as it will be overwritten each time Doxygen or moxygen is run.
->
+> [!NOTE] 
+> The documentation is auto-generated in a html/ folder by a workflow, do not edit manually, as it will be overwritten each time Doxygen is run.
 > To regenerate the documentation:
 > ```bash
 > doxygen docs/Doxyfile
-> moxygen --output docs/AsyncState.md docs/xml 
 > ```
 
----
+Public documentation is available on [https://antonin1106.github.io/AsyncState/](https://antonin1106.github.io/AsyncState/).
 
-### `examples/`
+### [`examples/`](examples/)
 Includes ready-to-use Arduino sketches demonstrating how to use the library:
-- **[AsyncSerial.ino](examples/AsyncSerial/AsyncSerial.ino)** – Example demonstrating multiple AsyncState timers in the Serial Monitor.
-- **[AsyncLed.ino](examples/AsyncLed/AsyncLed.ino)** – Example demonstrating AsyncState timer with led.
+- **[AsyncSerial.ino](examples/AsyncSerial/AsyncSerial.ino)** : Example demonstrating multiple AsyncState timers in the Serial Monitor.
+- **[AsyncLed.ino](examples/AsyncLed/AsyncLed.ino)** : Example demonstrating AsyncState timer with led.
+
+### [`src/`](src/)
+Contains the main source code of the library:
+- **[AsyncState.h](src/AsyncState.h) / [AsyncState.cpp](src/AsyncState.cpp)** : Core class files defining the non-blocking timer system.
 
 ---
+## Author
+### [Antonin1106](https://github.com/Antonin1106)
 
-### `src/`
-Contains the main source code of the library:
-- **[AsyncState.h](src/AsyncState.h) / [AsyncState.cpp](src/AsyncState.cpp)** – Core class files defining the non-blocking timer system.
+Passionate student developer with a strong interest in Web Development, Computer Science, and Electronics

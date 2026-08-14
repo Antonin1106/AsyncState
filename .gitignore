@@ -3,5 +3,6 @@
 # Build directory where are stored compiled files
 build
 
-# Ignore Doxygen intermediate outputs
+# Ignore Doxygen outputs
 docs/xml
+docs/html

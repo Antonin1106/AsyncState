@@ -11,39 +11,42 @@ OUTPUT_DIRECTORY       = docs
 # =====================================================
 # Input
 # =====================================================
-INPUT                  = src examples
-FILE_PATTERNS          = *.h *.cpp *ino
+INPUT                  = src examples .
+FILE_PATTERNS          = *.h *.cpp *ino README.md
 RECURSIVE              = YES
-EXCLUDE_PATTERNS       = *.md /test/
+EXCLUDE_PATTERNS       = /test/ /docs/**
 
 # =====================================================
 # Markdown support
 # =====================================================
 MARKDOWN_SUPPORT = YES
 OPTIMIZE_OUTPUT_JAVA = NO
-USE_MDFILE_AS_MAINPAGE = 
+USE_MDFILE_AS_MAINPAGE = README.md
 
 # =====================================================
 # Extraction
 # =====================================================
 EXTRACT_ALL            = YES
-EXTRACT_PRIVATE        = NO
-EXTRACT_STATIC         = NO
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
 EXTRACT_LOCAL_CLASSES  = YES
 EXTRACT_ANON_NSPACES   = NO
 
 # =====================================================
 # Output formats
 # =====================================================
-GENERATE_HTML          = NO
+GENERATE_HTML          = YES
 GENERATE_LATEX         = NO
-GENERATE_XML           = YES
+GENERATE_XML           = NO
+GENERATE_TREEVIEW      = YES
 
 # =====================================================
 # Source code browser
 # =====================================================
 ENABLE_PREPROCESSING   = YES
 MACRO_EXPANSION        = YES
+DISABLE_INDEX = NO
+FULL_SIDEBAR = NO
 
 # =====================================================
 # Sorting
@@ -56,3 +59,9 @@ SORT_MEMBER_DOCS       = YES
 FULL_PATH_NAMES        = NO
 STRIP_FROM_PATH        = src
 SHOW_FILES            = YES
+
+# =====================================================
+# External CSS
+# =====================================================
+# The stylesheet is loaded by running the workflow "Deploy"
+HTML_EXTRA_STYLESHEET  = docs/doxygen-awesome.css

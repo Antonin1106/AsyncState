@@ -1,0 +1,23 @@
+# .github/workflows/Build.yml
+# This is a build configuration file for GitHub Actions.
+# It build each examples in the examples directory and compiles them using Arduino IDE
+name: Build
+
+on:
+  - push
+  - pull_request
+jobs:
+  compile-sketch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install AsyncSate
+        run: |
+          mkdir -p "$HOME/Arduino/libraries/AsyncState"
+          cp -r src "$HOME/Arduino/libraries/AsyncState/"
+          cp library.properties "$HOME/Arduino/libraries/AsyncState/"
+      - uses: arduino/compile-sketches@v1
+        with:
+          sketch-paths: |
+            - ./
+          libraries: |
